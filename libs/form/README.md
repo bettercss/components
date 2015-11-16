@@ -1,6 +1,6 @@
 # Form
 
-The `Forms` module is a baseline for building complex forms.
+The `Form` library is a baseline for building complex forms.
 
 ## Base
 
