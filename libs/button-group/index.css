@@ -1,0 +1,86 @@
+/**
+ * Button Group
+ */
+
+.c-button-group {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+/**
+ * Button Group Item Base
+ */
+
+.c-button-group__item {
+	flex: 0 1 auto;
+	display: block;
+	vertical-align: middle;
+	border-radius: 0;
+}
+
+/**
+ * 1. Keeps the border-radius when button is nested.
+ */
+
+.c-button-group--rounded .c-button-group__item:first-child,
+.c-button-group--rounded .c-button-group__item:first-child > *:nth-child(1) {
+	border-top-left-radius: var(--button-group-border-radius-rounded);
+	border-bottom-left-radius: var(--button-group-border-radius-rounded);
+}
+
+.c-button-group--rounded .c-button-group__item:last-child,
+.c-button-group--rounded .c-button-group__item:last-child > *:nth-child(1) {
+	border-top-right-radius: var(--button-group-border-radius-rounded);
+	border-bottom-right-radius: var(--button-group-border-radius-rounded);
+}
+
+.c-button-group--justified {
+	justify-content: center;
+}
+
+.c-button-group--justified .c-button-group__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1 1 auto;
+}
+
+/**
+* 1. Keeps the button justified when it's nested.
+*/
+
+.c-button-group__item  > *:nth-child(1) {
+	/* [1] */
+	flex: 1 1 auto;
+}
+
+
+/**
+* 1. Only works if the border is 1px in size (hack)
+*/
+
+.c-button-group--bordered .c-button-group__item {
+	margin-left: -1px;
+}
+
+.c-button-group--small > .c-button-group__item:not(:last-child) {
+	margin-right: var(--button-group-padding-small);
+}
+
+
+.c-button-group--large > .c-button-group__item:not(:last-child) {
+	margin-right: var(--button-group-padding-large);
+}
+
+
+
+
+
+:root {
+	--button-group-border-radius-rounded: 5px;
+	--button-group-padding-small: calc(var(--base-spacing-unit) / 2);
+	--button-group-padding-large: calc(var(--base-spacing-unit) * 2);
+}
+
