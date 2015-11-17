@@ -21,3 +21,4 @@ Install via [npm](http://npmjs.org/):
 * [Label](./libs/label/)
 * [Feedback](./libs/feedback/)
 * [Dropdown](./libs/dropdown/)
+* [Card](./libs/card/)
