@@ -73,3 +73,13 @@ Large inner spacing for tooltip.
 ```html
 <a class="c-tooltip c-tooltip--small" href="#" title="Tooltip" data-content="This is the tooltip content">Tooltip</a>
 ```
+
+## State
+
+##### .is-active
+
+When a tooltip is in an active state.
+
+```html
+<a class="c-tooltip is-active" href="#" title="Tooltip" data-content="This is the tooltip content">Tooltip Active</a>
+```
