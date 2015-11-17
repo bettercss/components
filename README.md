@@ -19,4 +19,4 @@ Install via [npm](http://npmjs.org/):
 * [Nav](./libs/nav/)
 * [List](./libs/list/)
 * [Label](./libs/label/)
-* [Label](./libs/feedback/)
+* [Feedback](./libs/feedback/)
