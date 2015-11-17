@@ -17,3 +17,4 @@ Install via [npm](http://npmjs.org/):
 * [Tab](./libs/tab/)
 * [Overlay](./libs/overlay/)
 * [Nav](./libs/nav/)
+* [List](./libs/list/)
