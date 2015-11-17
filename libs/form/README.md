@@ -4,6 +4,14 @@ The `Form` library is a baseline for building complex forms.
 
 ## Base
 
+##### .c-form
+
+Base class for forms.
+
+```html
+<form class="c-form"></form>
+```
+
 ##### .c-form__fieldset
 
 Base class for fieldsets.

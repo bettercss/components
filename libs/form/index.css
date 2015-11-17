@@ -2,6 +2,8 @@
  * Form
  */
 
+.c-form {}
+
 .c-form__fieldset,
 .c-form__input,
 .c-form__select,
