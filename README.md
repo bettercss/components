@@ -18,3 +18,4 @@ Install via [npm](http://npmjs.org/):
 * [Overlay](./libs/overlay/)
 * [Nav](./libs/nav/)
 * [List](./libs/list/)
+* [Label](./libs/label/)
