@@ -4,9 +4,17 @@ The `Tab` library is a baseline for building horizontal or vertical tabbed conte
 
 ## Base
 
+##### .c-tab
+
+Base class for tabs.
+
+```html
+<div class="c-tab"></div>    
+```
+
 ##### .c-tab__list
 
-Base for list type navigations.
+Base for list type navigation.
 
 ```html
 <div class="c-tab">

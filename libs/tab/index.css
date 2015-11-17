@@ -2,6 +2,8 @@
  * Tab
  */
 
+.c-tab {}
+
 .c-tab__list {
 	display: flex;
 	flex-wrap: wrap;
