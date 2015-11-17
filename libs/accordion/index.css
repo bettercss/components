@@ -1,0 +1,64 @@
+/**
+ * Accordion
+ */
+
+.c-accordion {
+	list-style-type: none;
+	margin: 0;
+}
+
+.c-accordion__item {}
+
+/**
+ * 1. Use flexbox to make sure any number of child elements line up
+ *    horizontally.
+ * 2. Sometimes when clicking repeatedly the text accidentally gets
+ *    selected. Prevent this.
+ */
+
+.c-accordion__header {
+	padding: var(--accordion-header-padding);
+	display: flex; /* [1] */
+	justify-content: space-between; /* [1] */
+	user-select: none; /* [2] */
+	cursor: pointer;
+}
+
+/**
+ * 1. Allow use of elements such as H1-H6 as titles by resetting margin.
+ */
+
+.c-accordion__title {
+	margin: 0; /* [1] */
+}
+
+.c-accordion__content {
+	padding: var(--accordion-content-padding);
+	display: none;
+}
+
+/**
+ * 1. Prevent extra space after elements like P, UL, etc. when they are the
+ *    last thing in the content.
+ */
+
+.c-accordion__content:last-child {
+	margin-bottom: 0; /* [1] */
+}
+
+/**
+ * 1. A class toggled by JS.
+ */
+
+.c-accordion__content.is-active {
+	display: block; /* [1] */
+}
+
+
+
+
+
+:root {
+	--accordion-header-padding: var(--base-spacing-unit);
+	--accordion-content-padding: var(--base-spacing-unit);
+}

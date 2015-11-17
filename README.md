@@ -22,3 +22,4 @@ Install via [npm](http://npmjs.org/):
 * [Feedback](./libs/feedback/)
 * [Dropdown](./libs/dropdown/)
 * [Card](./libs/card/)
+* [Accordion](./libs/accordion/)
