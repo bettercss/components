@@ -14,3 +14,4 @@ Install via [npm](http://npmjs.org/):
 * [Box](./libs/box/)
 * [Form](./libs/form/)
 * [Form](./libs/tooltip/)
+* [Tab](./libs/tab/)
