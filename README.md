@@ -15,3 +15,4 @@ Install via [npm](http://npmjs.org/):
 * [Form](./libs/form/)
 * [Form](./libs/tooltip/)
 * [Tab](./libs/tab/)
+* [Overlay](./libs/overlay/)
