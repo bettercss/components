@@ -20,3 +20,4 @@ Install via [npm](http://npmjs.org/):
 * [List](./libs/list/)
 * [Label](./libs/label/)
 * [Feedback](./libs/feedback/)
+* [Dropdown](./libs/dropdown/)
