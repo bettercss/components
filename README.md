@@ -16,3 +16,4 @@ Install via [npm](http://npmjs.org/):
 * [Form](./libs/tooltip/)
 * [Tab](./libs/tab/)
 * [Overlay](./libs/overlay/)
+* [Nav](./libs/nav/)
