@@ -71,7 +71,7 @@ Vertical tab navigation.
 </div> 
 ```
 
-## State
+## States
 
 ##### .is-active
 
