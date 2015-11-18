@@ -60,19 +60,9 @@ Removes double borders when buttons have borders `This is a hack and will be dep
 
 ### Spacing
 
-##### .c-button-group--small
+##### .c-button-group--[small|large]
 
-Small gutter between button items.
-
-```html
-<div class="c-button-group c-button-group--rounded">
-	<a class="c-button-group__item c-button" href="Button">Button</a>
-</div>  
-```
-
-##### .c-button-group--large
-
-Small gutter between button items.
+Inner spacing gutter between button items.
 
 ```html
 <div class="c-button-group c-button-group--rounded">

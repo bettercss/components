@@ -24,17 +24,11 @@ Full width button.
 
 ### Sizing
 
-##### .c-button--small
+##### .c-button--[small|large]
 
-Small button.
+Inner spacing for button.
 
 ```html
 <a class="c-button c-button--small" href="#" title=""></a>
 ```
-
-##### .c-button--large
-
-Large button.
-
-```html
-<a class="c-button c-button--large" href="#" title=""></a>
+=

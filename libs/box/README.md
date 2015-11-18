@@ -34,18 +34,10 @@ Scrollable Box
 
 ### Sizing
 
-##### .c-box--small
+##### .c-box--[small|large]
 
-Small box.
+Set inner spacing for box.
 
 ```html
 <div class="c-box c-box--small"></div>
-```
-
-##### .c-box--large
-
-Large box.
-
-```html
-<div class="c-box c-box--large"></div>
 ```

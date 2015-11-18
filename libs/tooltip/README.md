@@ -24,51 +24,19 @@ Wrap text onto a new line after a certain width.
 
 ### Directional
 
-##### .c-tooltip--top
+##### .c-tooltip--[top|left|right|bottom]
 
-Tooltip placed at the top of you element.
+Directional class for tooltip.
 
 ```html
 <a class="c-tooltip c-tooltip--top" href="#" title="Tooltip" data-content="This is the tooltip content">Tooltip</a>
 ```
 
-##### .c-tooltip--left
-
-Tooltip placed left of your element.
-
-```html
-<a class="c-tooltip c-tooltip--left" href="#" title="Tooltip" data-content="This is the tooltip content">Tooltip</a>
-```
-
-##### .c-tooltip--right
-
-Tooltip placed right of your element.
-
-```html
-<a class="c-tooltip c-tooltip--right" href="#" title="Tooltip" data-content="This is the tooltip content">Tooltip</a>
-```
-
-##### .c-tooltip--bottom
-
-Tooltip placed at the bottom of your element.
-
-```html
-<a class="c-tooltip c-tooltip--bottom" href="#" title="Tooltip" data-content="This is the tooltip content">Tooltip</a>
-```
-
 ### Spacing
 
-##### .c-tooltip--small
+##### .c-tooltip--[small|large]
 
-Small inner spacing for tooltip.
-
-```html
-<a class="c-tooltip c-tooltip--small" href="#" title="Tooltip" data-content="This is the tooltip content">Tooltip</a>
-```
-
-##### .c-tooltip--large
-
-Large inner spacing for tooltip.
+Inner spacing for tooltip.
 
 ```html
 <a class="c-tooltip c-tooltip--small" href="#" title="Tooltip" data-content="This is the tooltip content">Tooltip</a>

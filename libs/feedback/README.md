@@ -28,9 +28,9 @@ Base class for links within feedback.
 
 ### Types
 
-##### .c-feedback--error
+##### .c-feedback--[error|success|warning]
 
-Error type feedback.
+Feedback color types.
 
 ```html
 <div class="c-feedback c-feedback--error">
@@ -38,44 +38,14 @@ Error type feedback.
 </div>   
 ```
 
-##### .c-feedback--success
-
-Success type feedback.
-
-```html
-<div class="c-feedback c-feedback--success">
-	<p>hi</p>
-</div>  
-```
-
-##### .c-feedback--warning
-
-Warning type feedback.
-
-```html
-<div class="c-feedback c-feedback--warning">
-	<p>hi</p>
-</div> 
-```
-
 ### Spacing
 
-##### .c-feedback--small
+##### .c-feedback--[small|large]
 
-Small spacing for feedback.
+Inner spacing for feedback.
 
 ```html
 <div class="c-feedback c-feedback--small">
-	<p>hi</p>
-</div> 
-```
-
-##### .c-feedback--large
-
-Large spacing for feedback.
-
-```html
-<div class="c-feedback c-feedback--large">
 	<p>hi</p>
 </div> 
 ```

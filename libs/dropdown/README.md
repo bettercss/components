@@ -52,67 +52,12 @@ Action and content are full width (100%)
 
 ### Directional
 
-##### .c-feedback--right
+##### .c-feedback--[top|top-right|right|left|bottom|bottom-right]
 
-Align dropdown content right of action.
+Align dropdown content in direction specified.
 
 ```html
 <div class="c-dropdown c-dropdown--right">
-	<a class="c-dropdown__action" href="#" title="Action">Action</a>
-    <div class="c-dropdown__content"></div>
-</div>   
-```
-
-##### .c-feedback--left
-
-Align dropdown content left of action.
-
-```html
-<div class="c-dropdown c-dropdown--left">
-	<a class="c-dropdown__action" href="#" title="Action">Action</a>
-    <div class="c-dropdown__content"></div>
-</div>   
-```
-
-##### .c-feedback--top
-
-Align dropdown content top of action.
-
-```html
-<div class="c-dropdown c-dropdown--top">
-	<a class="c-dropdown__action" href="#" title="Action">Action</a>
-    <div class="c-dropdown__content"></div>
-</div>   
-```
-
-##### .c-feedback--top-right
-
-Align dropdown content top right of action.
-
-```html
-<div class="c-dropdown c-dropdown--top-right">
-	<a class="c-dropdown__action" href="#" title="Action">Action</a>
-    <div class="c-dropdown__content"></div>
-</div>   
-```
-
-##### .c-feedback--bottom
-
-Align dropdown content bottom of action.
-
-```html
-<div class="c-dropdown c-dropdown--bottom">
-	<a class="c-dropdown__action" href="#" title="Action">Action</a>
-    <div class="c-dropdown__content"></div>
-</div>   
-```
-
-##### .c-feedback--bottom-right
-
-Align dropdown content bottom right of action.
-
-```html
-<div class="c-dropdown c-dropdown--bottom-right">
 	<a class="c-dropdown__action" href="#" title="Action">Action</a>
     <div class="c-dropdown__content"></div>
 </div>   

@@ -41,23 +41,12 @@ Gives the list disc style bullets.
 
 ### Spacing
 
-##### .c-list--vertical-small
+##### .c-list--vertical-[small|large]
 
-Small vertical spacing.
+Vertical spacing for list.
 
 ```html
 <ul class="c-list c-list--vertical-small">
-	<li class="c-list__item">Item</a>
-    <li class="c-list__item">Item</a>
-</ul>     
-```
-
-##### .c-list--vertical-large
-
-Small vertical spacing.
-
-```html
-<ul class="c-list c-list--vertical-large">
 	<li class="c-list__item">Item</a>
     <li class="c-list__item">Item</a>
 </ul>     

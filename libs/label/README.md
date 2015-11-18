@@ -22,26 +22,10 @@ Badge type label.
 <span class="c-label c-label--badge">Label</span>    
 ```
 
-##### .c-label--error
+##### .c-label--[error|success|warning]
 
-Error type label.
+Label color types.
 
 ```html
 <span class="c-label c-label--error">Label</span>    
-```
-
-##### .c-label--success
-
-Success type label.
-
-```html
-<span class="c-label c-label--success">Label</span>    
-```
-
-##### .c-label--warning
-
-Warning type label.
-
-```html
-<span class="c-label c-label--warning">Label</span>    
 ```
