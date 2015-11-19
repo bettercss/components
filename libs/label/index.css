@@ -39,9 +39,9 @@
 
 
 :root {
-	--label-padding: var(--spacing-unit);
+	--label-padding: calc(var(--spacing-unit) / 5);
 	--label-font-weight: bold;
-	--label-front-size: inherit;
+	--label-front-size: .80rem;
 
 	--label-border-radius-rounded: 10px;
 
