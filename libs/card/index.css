@@ -69,7 +69,7 @@
 
 :root {
 	--card-color-background: #fff;
-	--card-header-padding: var(--base-spacing-unit);
-	--card-content-padding: var(--base-spacing-unit);
-	--card-footer-padding: var(--base-spacing-unit);
+	--card-header-padding: var(--spacing-unit);
+	--card-content-padding: var(--spacing-unit);
+	--card-footer-padding: var(--spacing-unit);
 }

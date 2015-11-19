@@ -231,9 +231,10 @@
 	--tooltip-font-weight: bold;
 	--tooltip-font-size: inherit;
 	--tooltip-color-background: #000;
+	--tooltip-arrow-color: #000;
 	--tooltip-color: #fff;
-	--tooltip-padding: var(--base-spacing-unit);
+	--tooltip-padding: var(--spacing-unit);
 	--tooltip-width-wrap: 200px;
-	--tooltip-padding-small: calc(var(--base-spacing-unit) / 2);
-	--tooltip-padding-large: calc(var(--base-spacing-unit) * 2);
+	--tooltip-padding-small: calc(var(--spacing-unit) / 2);
+	--tooltip-padding-large: calc(var(--spacing-unit) * 2);
 }

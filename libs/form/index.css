@@ -18,7 +18,7 @@
 .c-form__textarea,
 .c-form__file,
 .c-form__checkbox,
-.c-form__radio
+.c-form__radio,
 .c-form__label,
 .c-form__item {
 	padding: var(--form-field-padding);
@@ -29,7 +29,7 @@
  */
 
 .c-form__item {
-	margin-bottom: var(--base-vertical-rhyme);
+	margin-bottom: var(--vertical-rhyme);
 }
 
 /**
@@ -56,8 +56,8 @@
 :root {
 	--form-field-font-family: inherit;
 	--form-field-font-size: 1rem;
-	--form-field-padding: calc(var(--base-spacing-unit) / 2);
-	--form-item-margin: 0 calc(var(--base-spacing-unit) / 2) 0 0;
+	--form-field-padding: calc(var(--spacing-unit) / 2);
+	--form-item-margin: 0 calc(var(--spacing-unit) / 2) 0 0;
 	--form-fieldset-border: solid 1px #ccc;
 	--form-label-weight: bold;
 }

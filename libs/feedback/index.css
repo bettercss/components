@@ -55,9 +55,9 @@
 
 
 :root {
-	--feedback-padding: var(--base-spacing-unit);
-	--feedback-padding-small: calc(var(--base-spacing-unit) / 2);
-	--feedback-padding-large: calc(var(--base-spacing-unit) * 2);
+	--feedback-padding: var(--spacing-unit);
+	--feedback-padding-small: calc(var(--spacing-unit) / 2);
+	--feedback-padding-large: calc(var(--spacing-unit) * 2);
 
 	--feedback-color-background-error: #e94c60;
 	--feedback-color-error: #fff;

@@ -39,7 +39,7 @@
 
 
 :root {
-	--label-padding: var(--base-spacing-unit);
+	--label-padding: var(--spacing-unit);
 	--label-font-weight: bold;
 	--label-front-size: inherit;
 

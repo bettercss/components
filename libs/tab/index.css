@@ -63,6 +63,6 @@
 
 
 :root {
-	--tab-content-padding: var(--base-spacing-unit);
-	--tab-link-padding: calc(var(--base-spacing-unit) / 3) var(--base-spacing-unit);
+	--tab-content-padding: var(--spacing-unit);
+	--tab-link-padding: calc(var(--spacing-unit) / 3) var(--spacing-unit);
 }

@@ -14,7 +14,7 @@
 }
 
 .c-list__item {
-	margin-bottom: var(--base-vertical-rhyme);
+	margin-bottom: var(--vertical-rhyme);
 }
 
 /**
@@ -49,6 +49,6 @@
 
 
 :root {
-	--list-vertical-rhyme-small: calc(var(--base-vertical-rhyme) / 2);
-	--list-vertical-rhyme-large: var(--base-vertical-rhyme);
+	--list-vertical-rhyme-small: calc(var(--vertical-rhyme) / 2);
+	--list-vertical-rhyme-large: var(--vertical-rhyme);
 }

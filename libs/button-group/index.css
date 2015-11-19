@@ -80,7 +80,7 @@
 
 :root {
 	--button-group-border-radius-rounded: 5px;
-	--button-group-padding-small: calc(var(--base-spacing-unit) / 2);
-	--button-group-padding-large: calc(var(--base-spacing-unit) * 2);
+	--button-group-padding-small: calc(var(--spacing-unit) / 2);
+	--button-group-padding-large: calc(var(--spacing-unit) * 2);
 }
 

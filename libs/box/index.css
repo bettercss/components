@@ -52,6 +52,6 @@
 
 
 :root {
-	--button-padding-small: calc(var(--base-spacing-unit) / 2);
-	--button-padding-large: calc(var(--base-spacing-unit) * 2);
+	--button-padding-small: calc(var(--spacing-unit) / 2);
+	--button-padding-large: calc(var(--spacing-unit) * 2);
 }
