@@ -8,7 +8,8 @@
 .c-form__input,
 .c-form__select,
 .c-form__textarea,
-.c-form__file {
+.c-form__file,
+.c-form__item {
 	font-family: var(--form-field-font-family);
 	font-size: var(--form-field-font-size);
 }
@@ -19,9 +20,13 @@
 .c-form__file,
 .c-form__checkbox,
 .c-form__radio,
-.c-form__label,
-.c-form__item {
+.c-form__label {
 	padding: var(--form-field-padding);
+}
+
+.c-form__fieldset,
+.c-form__item {
+	padding: var(--form-container-padding);
 }
 
 /**
@@ -56,7 +61,8 @@
 :root {
 	--form-field-font-family: inherit;
 	--form-field-font-size: 1rem;
-	--form-field-padding: calc(var(--spacing-unit) / 2);
+	--form-field-padding: calc(var(--spacing-unit) / 3);
+	--form-container-padding: calc(var(--spacing-unit) / 2);
 	--form-item-margin: 0 calc(var(--spacing-unit) / 2) 0 0;
 	--form-fieldset-border: solid 1px #ccc;
 	--form-label-weight: bold;
