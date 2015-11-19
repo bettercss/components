@@ -6,43 +6,9 @@
 	position: relative;
 	display: inline-block;
 }
-
-.c-tooltip.is-active:before,
-.c-tooltip:hover:before,
-.c-tooltip.is-active:after,
-.c-tooltip:hover:after {
-	opacity: 1;
-}
-
-/**
- * 1. The CSS left property is based on the size of the parent element. The
- *    transform property is based on the size of the target element.
- */
-
-.c-tooltip.is-active:before,
-.c-tooltip:hover:before {
-	top: auto;
-	bottom: 100%;
-	left: 50%;
-	transform: translateX(-50%); /* [1] */
-}
-
-/**
- * 1. The CSS left property is based on the size of the parent element. The
- *    transform property is based on the size of the target element.
- */
-
-.c-tooltip.is-active:before,
-.c-tooltip:hover:before {
-	top: auto;
-	bottom: 100%;
-	left: 50%;
-	transform: translateX(-50%); /* [1] */
-}
-
 /**
  * 1. When dropdown content is not active place offscreen to prevent
- *    bstruction of other elements.
+ *    obstruction of other elements.
  */
 
 .c-tooltip:before,
@@ -76,6 +42,26 @@
 	text-align: center;
 }
 
+.c-tooltip.is-active:before,
+.c-tooltip:hover:before,
+.c-tooltip.is-active:after,
+.c-tooltip:hover:after {
+	opacity: 1;
+}
+
+/**
+ * 1. The CSS left property is based on the size of the parent element. The
+ *    transform property is based on the size of the target element.
+ */
+
+.c-tooltip.is-active:before,
+.c-tooltip:hover:before {
+	top: auto;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%); /* [1] */
+}
+
 /**
  * 1. The CSS left property is based on the size of the parent element. The
  *    transform property is based on the size of the target element.
@@ -87,7 +73,6 @@
 	left: 100%;
 	bottom: auto;
 	transform: translateY(-50%); /* [1] */
-
 	/* Arrow styles */
 	border: inset 6px;
 	content: "";
@@ -145,7 +130,6 @@
 .c-tooltip--top.is-active:before,
 .c-tooltip--top:hover:before {
 	bottom: 100%;
-
 	/* Arrow styles */
 	border: inset 6px;
 	content: "";
@@ -165,6 +149,7 @@
 .c-tooltip--top:hover:after {
 	bottom: 100%;
 	margin-bottom: 10px;
+	left: 0;
 }
 
 .c-tooltip--bottom.is-active:before,
@@ -172,7 +157,6 @@
 	top: 100%;
 	bottom: auto;
 	left: 50%;
-
 	/* Arrow styles */
 	border: inset 6px;
 	content: "";
@@ -191,7 +175,7 @@
 .c-tooltip--bottom.is-active:after,
 .c-tooltip--bottom:hover:after {
 	top: 100%;
-	left: 50%;
+	left: 0;
 	bottom: auto;
 	margin-top: 10px;
 }
@@ -229,11 +213,11 @@
 :root {
 	--tooltip-z-index: 20;
 	--tooltip-font-weight: bold;
-	--tooltip-font-size: inherit;
+	--tooltip-font-size: .80rem;
 	--tooltip-color-background: #000;
 	--tooltip-arrow-color: #000;
 	--tooltip-color: #fff;
-	--tooltip-padding: var(--spacing-unit);
+	--tooltip-padding: calc(var(--spacing-unit) / 4);
 	--tooltip-width-wrap: 200px;
 	--tooltip-padding-small: calc(var(--spacing-unit) / 2);
 	--tooltip-padding-large: calc(var(--spacing-unit) * 2);
