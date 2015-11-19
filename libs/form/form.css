@@ -1,0 +1,69 @@
+/**
+ * Form
+ */
+
+.c-form {}
+
+.c-form__fieldset,
+.c-form__input,
+.c-form__select,
+.c-form__textarea,
+.c-form__file,
+.c-form__item {
+	font-family: var(--form-field-font-family);
+	font-size: var(--form-field-font-size);
+}
+
+.c-form__input,
+.c-form__select,
+.c-form__textarea,
+.c-form__file,
+.c-form__checkbox,
+.c-form__radio,
+.c-form__label {
+	padding: var(--form-field-padding);
+}
+
+.c-form__fieldset,
+.c-form__item {
+	padding: var(--form-container-padding);
+}
+
+/**
+ * Contains labels, controls, error messages, etc.
+ */
+
+.c-form__item {
+	margin-bottom: var(--vertical-rhyme);
+}
+
+/**
+ * Wrap form elements in one or more fieldsets so they are grouped if CSS is
+ * disabled.
+ */
+
+.c-form__fieldset {
+	border: var(--form-fieldset-border);
+}
+
+.c-form__label {
+	font-weight: var(--form-label-weight);
+}
+
+.c-form__input {
+	width: 100%;
+}
+
+
+
+
+
+:root {
+	--form-field-font-family: inherit;
+	--form-field-font-size: 1rem;
+	--form-field-padding: calc(var(--spacing-unit) / 3);
+	--form-container-padding: calc(var(--spacing-unit) / 2);
+	--form-item-margin: 0 calc(var(--spacing-unit) / 2) 0 0;
+	--form-fieldset-border: solid 1px #ccc;
+	--form-label-weight: bold;
+}

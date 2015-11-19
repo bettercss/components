@@ -1,0 +1,57 @@
+/**
+ * Box
+ */
+
+.c-box {
+	display: block;
+}
+
+.c-box:last-child {
+	margin-bottom: 0;
+}
+
+/**
+ * Used for styling links. Will work regardless of what modifier is applied
+ * to the box for theming.
+ */
+
+.c-box__link,
+.c-box__link:hover,
+.c-box__link:active,
+.c-box__link:focus {
+	color: inherit;
+}
+
+/**
+ * Scrollable Box
+ */
+
+.c-box--scroll {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+/**
+ * Small Box
+ */
+
+.c-box--small {
+	padding: var(--button-padding-small);
+}
+
+/**
+ * Large Box
+ */
+
+.c-box--large {
+	padding: var(--button-padding-large);
+}
+
+
+
+
+
+:root {
+	--button-padding-small: calc(var(--spacing-unit) / 2);
+	--button-padding-large: calc(var(--spacing-unit) * 2);
+}

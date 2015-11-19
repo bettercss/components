@@ -1,0 +1,68 @@
+/**
+ * Tab
+ */
+
+.c-tab {}
+
+.c-tab__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.c-tab__item {
+	display: block;
+	text-decoration: inherit;
+}
+
+.c-tab__link {
+	display: block;
+	color: inherit;
+	padding: var(--tab-link-padding);
+}
+
+.c-tab__content {
+	display: none;
+	padding: var(--tab-content-padding);
+}
+
+/**
+  * 1. A class toggled by JS to show the active content.
+  */
+
+.c-tab__content.is-active {
+	display: block; /* [1] */
+}
+
+/**
+  * 1. Prevent extra space after elements like P, UL, etc. when they are the
+  *    last thing in the content.
+  */
+
+.c-tab__content:last-child {
+	margin-bottom: 0; /* [1] */
+}
+
+.c-tab--vertical {
+	display: flex;
+}
+
+.c-tab--vertical > .c-tabs__list {
+	display: block;
+}
+
+/**
+ * 1. Use flexbox to let the content fill up the extra space.
+ */
+
+.c-tab--vertical > .c-tabs__content {
+	flex-grow: 1; /* [1] */
+}
+
+
+
+
+
+:root {
+	--tab-content-padding: var(--spacing-unit);
+	--tab-link-padding: calc(var(--spacing-unit) / 3) var(--spacing-unit);
+}

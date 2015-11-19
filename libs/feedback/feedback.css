@@ -1,0 +1,68 @@
+/**
+ * Feedback
+ */
+
+.c-feedback {
+	display: block;
+	padding: var(--feedback-padding);
+}
+
+/**
+ * 1. Remove margin from last child element to prevent large space.
+ */
+
+.c-feedback:last-child {
+	margin-bottom: 0; /* [1] */
+}
+
+/**
+ * Used for styling links in specific modifiers.
+ * TODO: Links look just like text. Make them more distinguishable.
+ */
+
+.c-feedback__link,
+.c-feedback__link:hover,
+.c-feedback__link:active,
+.c-feedback__link:focus {
+	color: inherit;
+}
+
+.c-feedback--error {
+	background-color: var(--feedback-color-background-error);
+	color: var(--feedback-color-error);
+}
+
+.c-feedback--success {
+	background-color: var(--feedback-color-background-success);
+	color: var(--feedback-color-success);
+}
+
+.c-feedback--warning {
+	background-color: var(--feedback-color-background-warning);
+	color: var(--feedback-color-warning);
+}
+
+.c-feedback--small {
+	padding: var(--feedback-padding-small);
+}
+
+.c-feedback--large {
+	padding: var(--feedback-padding-large);
+}
+
+
+
+
+
+:root {
+	--feedback-padding: var(--spacing-unit);
+	--feedback-padding-small: calc(var(--spacing-unit) / 2);
+	--feedback-padding-large: calc(var(--spacing-unit) * 2);
+
+	--feedback-color-background-error: #e94c60;
+	--feedback-color-error: #fff;
+	--feedback-color-background-success: #8ac867;
+	--feedback-color-success: #fff;
+	--feedback-color-background-warning: #ff9900;
+	--feedback-color-warning: #fff;
+}
