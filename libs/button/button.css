@@ -86,5 +86,5 @@
 	--button-padding-small: calc(var(--spacing-unit) / 5) calc(var(--spacing-unit) / 4);
 	--button-padding-large: calc(var(--spacing-unit) / 2) var(--spacing-unit);
 	--button-border: solid 1px #eee;
-	--button-color: solid 1px #999;
+	--button-color: #999;
 }
