@@ -17,7 +17,6 @@
 
 /**
  * Used for styling links in specific modifiers.
- * TODO: Links look just like text. Make them more distinguishable.
  */
 
 .c-feedback__link,
@@ -25,6 +24,7 @@
 .c-feedback__link:active,
 .c-feedback__link:focus {
 	color: inherit;
+	text-decoration: underline;
 }
 
 .c-feedback--error {
