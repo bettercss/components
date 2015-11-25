@@ -16,13 +16,12 @@
 	width: 100%; /* [2] */
 }
 
-.c-card__head {
+.c-card__header {
 	flex: 0 0 auto;
 	padding: var(--card-header-padding);
 }
 
 .c-card__content {
-	padding: var(--card-content-padding);
 	flex: 1 1 auto;
 }
 
