@@ -14,7 +14,7 @@ Install via [npm](http://npmjs.org/):
 * [Button Group](./libs/button-group/)
 * [Box](./libs/box/)
 * [Form](./libs/form/)
-* [Form](./libs/tooltip/)
+* [Tooltip](./libs/tooltip/)
 * [Tab](./libs/tab/)
 * [Overlay](./libs/overlay/)
 * [Nav](./libs/nav/)
