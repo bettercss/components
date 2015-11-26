@@ -27,7 +27,6 @@
 
 .c-nav--horizontal {
 	display: flex;
-	flex-wrap: wrap;
 }
 
 .c-nav--vertical > .c-nav__item,

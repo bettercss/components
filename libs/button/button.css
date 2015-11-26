@@ -20,6 +20,7 @@
 	font-family: var(--button-font-family);
 	font-size: var(--button-font-size);
 	color: var(--button-color);
+	background-color: var(--button-color-background);
 	display: inline-block; /* [1] */
 	vertical-align: middle; /* [2] */
 	font: inherit; /* [3] */
@@ -40,6 +41,7 @@
 .c-button:active,
 .c-button:focus {
 	text-decoration: none;
+	color: var(--button-color);
 }
 
 /**
@@ -51,29 +53,6 @@
 	padding: 0;
 }
 
-/**
- * Small Buttons
- */
-
-.c-button--small {
-	padding: var(--button-padding-small);
-}
-
-/**
- * Large Buttons
- */
-
-.c-button--large {
-	padding: var(--button-padding-large);
-}
-
-/**
- * Full-width Buttons
- */
-
-.c-button--full {
-	width: 100%;
-}
 
 
 
@@ -81,10 +60,9 @@
 :root {
 	--button-font-family: inherit;
 	--button-font-size: inherit;
-	--button-line-height: 1.125rem;
-	--button-padding: calc(var(--spacing-unit) / 3) calc(var(--spacing-unit) / 2);
-	--button-padding-small: calc(var(--spacing-unit) / 5) calc(var(--spacing-unit) / 4);
-	--button-padding-large: calc(var(--spacing-unit) / 2) var(--spacing-unit);
-	--button-border: solid 1px #eee;
-	--button-color: #999;
+	--button-line-height: 1.5;
+	--button-border: solid 1px #ccc;
+	--button-color: #000;
+	--button-color-background: #fff;
+	--button-padding: var(--spacing-unit-small) var(--spacing-unit);
 }

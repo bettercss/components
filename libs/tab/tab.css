@@ -7,6 +7,11 @@
 .c-tab__list {
 	display: flex;
 	flex-wrap: wrap;
+	border: var(--tab-list-border);
+	list-style: none;
+	margin-bottom: 0;
+	background-color: var(--tab-list-color-background);
+	border-bottom: 0;
 }
 
 .c-tab__item {
@@ -23,38 +28,45 @@
 .c-tab__content {
 	display: none;
 	padding: var(--tab-content-padding);
+	border: var(--tab-content-border);
+	border-top: 0;
 }
 
-/**
-  * 1. A class toggled by JS to show the active content.
-  */
+.c-tab__item.is-active,
+.c-tab__link.is-active {
+	background-color: var(--tab-item-color-background);
+}
 
 .c-tab__content.is-active {
 	display: block; /* [1] */
-}
-
-/**
-  * 1. Prevent extra space after elements like P, UL, etc. when they are the
-  *    last thing in the content.
-  */
-
-.c-tab__content:last-child {
-	margin-bottom: 0; /* [1] */
 }
 
 .c-tab--vertical {
 	display: flex;
 }
 
-.c-tab--vertical > .c-tabs__list {
+.c-tab--vertical > .c-tab__list {
 	display: block;
+	flex: 0 0 auto;
+	border-bottom: var(--tab-list-border);
+	border-right: 0;
+}
+
+.c-tab--vertical > .c-tab__item,
+.c-tab--vertical > .c-tab__link {
+
+}
+
+.c-tab--vertical > .c-tab__content {
+	border-top: var(--tab-content-border);
+	border-left: 0;
 }
 
 /**
  * 1. Use flexbox to let the content fill up the extra space.
  */
 
-.c-tab--vertical > .c-tabs__content {
+.c-tab--vertical > .c-tab__content {
 	flex-grow: 1; /* [1] */
 }
 
@@ -64,5 +76,9 @@
 
 :root {
 	--tab-content-padding: var(--spacing-unit);
-	--tab-link-padding: calc(var(--spacing-unit) / 3) var(--spacing-unit);
+	--tab-link-padding: var(--spacing-unit-small) var(--spacing-unit);
+	--tab-list-border: solid 1px #ccc;
+	--tab-content-border: solid 1px #ccc;
+	--tab-list-color-background: #f2f2f2;
+	--tab-item-color-background: #fff;
 }

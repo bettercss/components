@@ -26,9 +26,7 @@
     "url": "https://github.com/bettercss/components/issues"
   },
   "homepage": "https://github.com/bettercss/components",
-  "dependencies": {
-    "bettercss-defaults": "*"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {}
 }

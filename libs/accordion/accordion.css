@@ -7,21 +7,25 @@
 	margin: 0;
 }
 
-.c-accordion__item {}
+.c-accordion__item {
+	border: var(--accordion-item-border);
+	border-bottom: 0;
+}
+
+.c-accordion__item:last-child {
+	border-bottom: var(--accordion-item-border);
+}
 
 /**
- * 1. Use flexbox to make sure any number of child elements line up
- *    horizontally.
- * 2. Sometimes when clicking repeatedly the text accidentally gets
+ * 1. Sometimes when clicking repeatedly the text accidentally gets
  *    selected. Prevent this.
  */
 
 .c-accordion__header {
 	padding: var(--accordion-header-padding);
-	display: flex; /* [1] */
-	justify-content: space-between; /* [1] */
-	user-select: none; /* [2] */
+	user-select: none; /* [1] */
 	cursor: pointer;
+	border-bottom: 0;
 }
 
 /**
@@ -35,23 +39,15 @@
 .c-accordion__content {
 	padding: var(--accordion-content-padding);
 	display: none;
+	border-top: var(--accordion-content-border);
 }
 
 /**
- * 1. Prevent extra space after elements like P, UL, etc. when they are the
- *    last thing in the content.
+ * States
  */
 
-.c-accordion__content:last-child {
-	margin-bottom: 0; /* [1] */
-}
-
-/**
- * 1. A class toggled by JS.
- */
-
-.c-accordion__content.is-active {
-	display: block; /* [1] */
+.c-accordion__item.is-active .c-accordion__content {
+	display: block;
 }
 
 
@@ -61,4 +57,6 @@
 :root {
 	--accordion-header-padding: var(--spacing-unit);
 	--accordion-content-padding: var(--spacing-unit);
+	--accordion-item-border: solid 1px #ccc;
+	--accordion-content-border: solid 1px #ccc;
 }

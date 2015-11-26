@@ -1,59 +1,40 @@
-# Card
+<p class="u-text-emphasize">This library is a flexible and extensible content container which includes options for headers and footers.</p>
 
-The `Card` library that applies a container around a related grouping of information.
-
-## Base
-
-##### .c-card
-
-Base class for card.
+The card base comes with minimal color styling that can be overridden with your own modifier styles.
 
 ```html
 <div class="c-card">
-	<div class="c-dropdown__header"></div>
-    <div class="c-dropdown__content"></div>
-    <div class="c-dropdown__footer"></div>
-</div>    
+    <div class="c-card__header">
+        <h3>Header</h3>
+    </div>
+    <div class="c-card__content c-card__content--scroll" style="height:100px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis neque a dapibus commodo. Nam feugiat fermentum massa, non dignissim mi. Nam dictum faucibus dolor, nec venenatis leo facilisis id. </p>
+    </div>
+    <div class="c-card__footer u-text-align-right">
+        <a class="c-button" href="#">Ok</a>
+    </div>
+</div>
 ```
 
-##### .c-feedback__header
+### .c-card__content--scroll
 
-Base class for the card header.
-
-```html
-<div class="c-card">
-	<div class="c-dropdown__header"></div>
-</div>   
-```
-
-##### .c-feedback__content
-
-Base class for the card content.
+Allows the card content to scroll vertical.
 
 ```html
 <div class="c-card">
-	<div class="c-dropdown__content"></div>
-</div>   
-```
-
-##### .c-feedback__footer
-
-Base class for the card footer.
-
-```html
-<div class="c-card">
-	<div class="c-dropdown__footer"></div>
-</div>   
-```
-
-## Modifiers
-
-##### .c-card__content--scroll
-
-Allow for the content of card to scroll.
-
-```html
-<div class="c-card">
-    <div class="c-dropdown__content c-card__content--scroll"></div>
+    <div class="c-card__header">
+        <h3>Header</h3>
+    </div>
+    <div class="c-card__content c-card__content--scroll" style="height:200px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis neque a dapibus commodo. Nam feugiat fermentum massa, non dignissim mi. Nam dictum faucibus dolor, nec venenatis leo facilisis id. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis neque a dapibus commodo. Nam feugiat fermentum massa, non dignissim mi. Nam dictum faucibus dolor, nec venenatis leo facilisis id. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis neque a dapibus commodo. Nam feugiat fermentum massa, non dignissim mi. Nam dictum faucibus dolor, nec venenatis leo facilisis id. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis neque a dapibus commodo. Nam feugiat fermentum massa, non dignissim mi. Nam dictum faucibus dolor, nec venenatis leo facilisis id. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis neque a dapibus commodo. Nam feugiat fermentum massa, non dignissim mi. Nam dictum faucibus dolor, nec venenatis leo facilisis id. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis neque a dapibus commodo. Nam feugiat fermentum massa, non dignissim mi. Nam dictum faucibus dolor, nec venenatis leo facilisis id. </p>
+    </div>
+    <div class="c-card__footer u-text-align-right">
+        <a class="c-button" href="#">Ok</a>
+    </div>
 </div>    
 ```

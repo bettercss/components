@@ -24,27 +24,16 @@
  * 1. Keeps the border-radius when button is nested.
  */
 
-.c-button-group--rounded .c-button-group__item:first-child,
-.c-button-group--rounded .c-button-group__item:first-child > *:nth-child(1) {
-	border-top-left-radius: var(--button-group-border-radius-rounded);
-	border-bottom-left-radius: var(--button-group-border-radius-rounded);
+.c-button-group--round .c-button-group__item:first-child,
+.c-button-group--round .c-button-group__item:first-child > *:nth-child(1) {
+	border-top-left-radius: var(--button-group-border-radius-round);
+	border-bottom-left-radius: var(--button-group-border-radius-round);
 }
 
-.c-button-group--rounded .c-button-group__item:last-child,
-.c-button-group--rounded .c-button-group__item:last-child > *:nth-child(1) {
-	border-top-right-radius: var(--button-group-border-radius-rounded);
-	border-bottom-right-radius: var(--button-group-border-radius-rounded);
-}
-
-.c-button-group--justified {
-	justify-content: center;
-}
-
-.c-button-group--justified .c-button-group__item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex: 1 1 auto;
+.c-button-group--round .c-button-group__item:last-child,
+.c-button-group--round .c-button-group__item:last-child > *:nth-child(1) {
+	border-top-right-radius: var(--button-group-border-radius-round);
+	border-bottom-right-radius: var(--button-group-border-radius-round);
 }
 
 /**
@@ -61,17 +50,17 @@
 * 1. Only works if the border is 1px in size (hack)
 */
 
-.c-button-group--bordered .c-button-group__item {
+.c-button-group--border .c-button-group__item {
 	margin-left: -1px;
 }
 
-.c-button-group--small > .c-button-group__item:not(:last-child) {
-	margin-right: var(--button-group-padding-small);
+.c-button-group--gutter-small > .c-button-group__item:not(:last-child) {
+	margin-right: var(--button-group-gutter-small);
 }
 
 
-.c-button-group--large > .c-button-group__item:not(:last-child) {
-	margin-right: var(--button-group-padding-large);
+.c-button-group--gutter-large > .c-button-group__item:not(:last-child) {
+	margin-right: var(--button-group-gutter-large);
 }
 
 
@@ -79,8 +68,7 @@
 
 
 :root {
-	--button-group-border-radius-rounded: 5px;
-	--button-group-padding-small: calc(var(--spacing-unit) / 2);
-	--button-group-padding-large: calc(var(--spacing-unit) * 2);
+	--button-group-border-radius-round: 5px;
+	--button-group-gutter-small: calc(var(--spacing-unit) / 2);
+	--button-group-gutter-large: calc(var(--spacing-unit) * 2);
 }
-

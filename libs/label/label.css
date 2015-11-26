@@ -11,6 +11,11 @@
 	font-size: var(--label-front-size);
 }
 
+.c-label--info {
+	background-color: var(--label-color-background-info);
+	color: var(--label-color-info);
+}
+
 .c-label--error {
 	background-color: var(--label-color-background-error);
 	color: var(--label-color-error);
@@ -26,11 +31,7 @@
 	color: var(--label-color-warning);
 }
 
-/**
- * TODO: Should badges be their own component?
- */
-
-.c-label--badge {
+.c-label--round {
 	border-radius: var(--label-border-radius-rounded);
 }
 
@@ -39,16 +40,18 @@
 
 
 :root {
-	--label-padding: calc(var(--spacing-unit) / 5);
+	--label-padding: var(--spacing-unit-tiny);
 	--label-font-weight: bold;
 	--label-front-size: .80rem;
 
-	--label-border-radius-rounded: 10px;
+	--label-border-radius-rounded: 50%;
 
-	--label-color-background-error: #e94c60;
-	--label-color-error: #fff;
-	--label-color-background-success: #8ac867;
-	--label-color-success: #fff;
-	--label-color-background-warning: #ff9900;
-	--label-color-warning: #fff;
+	--label-color-background-info: #cee2f4;
+	--label-color-info: #02356e;
+	--label-color-background-error: #f5cccb;
+	--label-color-error: #6f0000;
+	--label-color-background-success: #d9ead2;
+	--label-color-success: #264f0d;
+	--label-color-background-warning: #fff3ca;
+	--label-color-warning: #806100;
 }

@@ -1,51 +1,27 @@
-# Feedback
+<p class="u-text-emphasize">This library provides contextual feedback messages for typical user actions.</p>
 
-The `Feedback` library provides contextual feedback messages for typical user actions.
-
-## Base
-
-##### .c-feedback
-
-Base class for feedback.
+The feedback base comes with minimal color styling that can be overridden with your own modifier styles.
 
 ```html
 <div class="c-feedback">
 	<p>hi, *Waves*</p>
 </div>    
 ```
-
-##### .c-feedback__link
-
-Base class for links within feedback.
-
-```html
-<div class="c-feedback">
-	<p>hi, <a class="c-feedback__link" href="#">*Waves*</a></p>
-</div>    
-```
-
-## Modifiers
-
-### Types
-
-##### .c-feedback--[error|success|warning]
+### .c-feedback--[info|error|success|warning]
 
 Feedback color types.
 
 ```html
+<div class="c-feedback c-feedback--info">
+	<p>hi, *Waves*</p>
+</div>
 <div class="c-feedback c-feedback--error">
-	<p>hi</p>
-</div>   
-```
-
-### Spacing
-
-##### .c-feedback--[small|large]
-
-Inner spacing for feedback.
-
-```html
-<div class="c-feedback c-feedback--small">
-	<p>hi</p>
-</div> 
+<p>hi, *Waves*</p>
+</div>
+<div class="c-feedback c-feedback--success">
+	<p>hi, *Waves*</p>
+</div>
+<div class="c-feedback c-feedback--warning">
+	<p>hi, *Waves*</p>
+</div>
 ```

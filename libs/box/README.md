@@ -1,43 +1,21 @@
-# Box
+<p class="u-text-emphasize">This library provides a base for boxing of dom.</p>
 
-The `Box` library provides content wrapping for screen regions.
-
-## Base
-
-##### .c-box
-
-Base class for box.
+The `.c-box` base class doesn't come with any default color styles allowing you to use it as a container without having to override base styles.
 
 ```html
-<div class="c-box"></div>
-```
-
-##### .c-box__link
-
-Base class for styling nested links.
-
-```html
-<div class="c-box">
-	<a class="c-box__link" href="#" title="Link">Link</a>
+<div class="c-box u-border">
+    <p>Box mate</p>
 </div>
 ```
 
-## Modifiers
+### .c-box--scroll
 
-##### .c-box--scroll
-
-Scrollable Box
+Sets the box `overflow-x` to auto giving the box vertical scrollbars.
 
 ```html
-<div class="c-box c-box--scroll"></div>
-```
-
-### Sizing
-
-##### .c-box--[small|large]
-
-Set inner spacing for box.
-
-```html
-<div class="c-box c-box--small"></div>
+<div class="c-box c-box--scroll u-border" style="height: 100px">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis neque a dapibus commodo. Nam feugiat fermentum massa, non dignissim mi. Nam dictum faucibus dolor, nec venenatis leo facilisis id. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis neque a dapibus commodo. Nam feugiat fermentum massa, non dignissim mi. Nam dictum faucibus dolor, nec venenatis leo facilisis id. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis neque a dapibus commodo. Nam feugiat fermentum massa, non dignissim mi. Nam dictum faucibus dolor, nec venenatis leo facilisis id. </p>
+</div>
 ```

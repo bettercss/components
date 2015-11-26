@@ -1,89 +1,63 @@
-# Form
+<p class="u-text-emphasize">This library is a base for building forms.</p>
 
-The `Form` library is a baseline for building complex forms.
-
-## Base
-
-##### .c-form
-
-Base class for forms.
+The form base comes with minimal color styling that can be overridden with your own modifier styles.
 
 ```html
-<form class="c-form"></form>
+<form class="c-form">
+	<fieldset class="c-form__fieldset">
+		<div class="c-form__field">
+			<label class="c-form__label" for="username">Username</label>
+			<input id="username" class="c-form__input" type="text" name="username" value="" placeholder="" />
+		</div>
+
+		<div class="c-form__field">
+			<label class="c-form__label" for="password">Password</label>
+			<input id="password" class="c-form__input" type="password" name="password" value="" placeholder="" />
+		</div>
+
+		<div class="c-form__field">
+			<label class="c-form__label" for="file">File</label>
+			<input id="file" class="c-form__file" type="file" name="file" value="" />
+		</div>
+
+		<div class="c-form__field">
+			<label class="c-form__label" for="select">Select</label>
+			<select id="select" class="c-form__select" name="select">
+				<option>One</option>
+				<option>Two</option>
+				<option>Three</option>
+			</select>
+		</div>
+
+		<div class="c-form__field">
+			<label class="c-form__label" for="select">Select</label>
+			<select id="select" class="c-form__select" name="select" multiple="multiple">
+				<option>One</option>
+				<option>Two</option>
+				<option>Three</option>
+			</select>
+		</div>
+
+		<div class="c-form__field">
+			<div class="c-form__checkbox">
+				<input id="checkbox" class="c-form__input" type="checkbox" name="checkit" value="" placeholder="" />
+				<label class="c-form__label" for="checkbox">Check</label>
+			</div>
+		</div>
+
+		<div class="c-form__field">
+			<div class="c-form__radio">
+				<input id="radio" class="c-form__input" type="radio" name="radio" value="" placeholder="" />
+				<label class="c-form__label" for="radio">Radio</label>
+			</div>
+		</div>
+
+		<div class="c-form__field">
+			<button class="c-button" type="submit">Submit</button>
+		</div>
+
+	</fieldset>
+</form>
 ```
 
-##### .c-form__fieldset
 
-Base class for fieldsets.
-
-```html
-<fieldset class="c-form__fieldset"></fieldset>
-```
-
-##### .c-form__item
-
-Base container class form fields.
-
-```html
-<div class="c-form__item">
-	<label class="c-form__label">Name:</label>
-    <input class="c-form__input" name="name"  value="" />
-</div>
-```
-
-##### .c-form__label
-
-Base class for labels.
-
-```html
-<label class="c-form__label">Label</label>
-```
-
-##### .c-form__input
-
-Base class for inputs.
-
-```html
-<input class="c-form__input" name="name" value="" />
-```
-##### .c-form__select
-
-Base class for selects.
-
-```html
-<select class="c-form__input" name="name">
-	<option>Option</option>
-</select>
-```
-##### .c-form__textarea
-
-Base class for textarea.
-
-```html
-<textarea class="c-form_textarea" name="name">Text</textarea>
-```
-
-##### .c-form__file
-
-Base class for file upload fields.
-
-```html
-<input class="c-form_file" type="file" name="name" />
-```
-
-##### .c-form__checkbox
-
-Base class for checkboxes.
-
-```html
-<input class="c-form_file" type="checkbox" name="checkbox" /> CheckMe!
-```
-
-##### .c-form__radio
-
-Base class for checkboxes.
-
-```html
-<input class="c-form_file" type="radio" name="walkietalkie" /> Walkie Talkie
-<input class="c-form_file" type="radio" name="walkietalkie" /> Walkie Talkie
-```

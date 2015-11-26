@@ -1,34 +1,7 @@
-# Button
+<p class="u-text-emphasize">This library is a baseline for building simple and extendable buttons.</p>
 
-The `Button` library is a baseline for building simple and extendable buttons.
-
-## Base
-
-##### .c-button
-
-Base class for buttons
+The `.c-button` base class sets basic color styles which you can overridden with your own modifiers.
 
 ```html
-<a class="c-button" href="#" title=""></a>
+<a class="c-button" href="#" title="">Button</a>
 ```
-
-## Modifiers
-
-##### .c-button--full
-
-Full width button.
-
-```html
-<a class="c-button c-button--full" href="#" title=""></a>
-```
-
-### Sizing
-
-##### .c-button--[small|large]
-
-Inner spacing for button.
-
-```html
-<a class="c-button c-button--small" href="#" title=""></a>
-```
-=

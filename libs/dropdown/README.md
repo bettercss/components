@@ -1,77 +1,44 @@
-# Dropdown
+<p class="u-text-emphasize">This library is base for creating dropdowns menus.</p>
 
-The `Dropdown` library is a toggleable, contextual menu for displaying content.
-
-## Base
-
-##### .c-dropdown
-
-Base class for dropdowns.
+The dropdown base comes with minimal color styling that can be overridden with your own modifier styles.
 
 ```html
 <div class="c-dropdown">
-	<a class="c-dropdown__action" href="#" title="Action">Action</a>
-    <div class="c-dropdown__content"></div>
+	<a class="c-dropdown__action c-button" href="#" title="Action">Action</a>
+    <div class="c-dropdown__content">
+        <ul>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+    </div>
 </div>    
 ```
 
-##### .c-feedback__action
+### .c-dropdown--[top|top-right|right|left|bottom|bottom-right]
 
-Base class for the dropdown action.
-
-```html
-<div class="c-dropdown">
-	<a class="c-dropdown__action" href="#" title="Action">Action</a>
-    <div class="c-dropdown__content"></div>
-</div>    
-```
-
-##### .c-feedback__content
-
-Base class for the dropdowns content.
+Aligns `.c-dropdown__content` in the direction specified.
 
 ```html
-<div class="c-dropdown">
-	<a class="c-dropdown__action" href="#" title="Action">Action</a>
-    <div class="c-dropdown__content"></div>
-</div>    
-```
-
-## Modifiers
-
-##### .c-feedback--full
-
-Action and content are full width (100%)
-
-```html
-<div class="c-dropdown c-dropdown--full">
-	<a class="c-dropdown__action" href="#" title="Action">Action</a>
-    <div class="c-dropdown__content"></div>
-</div>   
-```
-
-### Directional
-
-##### .c-feedback--[top|top-right|right|left|bottom|bottom-right]
-
-Align dropdown content in direction specified.
-
-```html
-<div class="c-dropdown c-dropdown--right">
-	<a class="c-dropdown__action" href="#" title="Action">Action</a>
-    <div class="c-dropdown__content"></div>
-</div>   
+<div class="c-dropdown c-dropdown--right is-active">
+	<a class="c-dropdown__action c-button" href="#" title="Action">Action</a>
+    <div class="c-dropdown__content u-padding-small">
+        <p>Dropdown content</p>
+    </div>
+</div>
 ```
 
 ## States
 
 ##### .is-active
 
-Open dropdown state.
+Sets the dropdown into active state.
 
 ```html
 <div class="c-dropdown is-active">
-	<a class="c-dropdown__action" href="#" title="Action">Action</a>
-    <div class="c-dropdown__content"></div>
-</div>   
+	<a class="c-dropdown__action c-button" href="#" title="Action">Action</a>
+    <div class="c-dropdown__content u-padding-small">
+        <p>Dropdown content</p>
+    </div>
+</div>
 ```

@@ -62,6 +62,14 @@
 	transform: translateX(-50%); /* [1] */
 }
 
+.c-tooltip.is-active:after,
+.c-tooltip:hover:after {
+	top: auto;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%); /* [2] */
+}
+
 /**
  * 1. The CSS left property is based on the size of the parent element. The
  *    transform property is based on the size of the target element.
@@ -149,7 +157,7 @@
 .c-tooltip--top:hover:after {
 	bottom: 100%;
 	margin-bottom: 10px;
-	left: 0;
+	left: 50%;
 }
 
 .c-tooltip--bottom.is-active:before,
@@ -175,7 +183,7 @@
 .c-tooltip--bottom.is-active:after,
 .c-tooltip--bottom:hover:after {
 	top: 100%;
-	left: 0;
+	left: 50%;
 	bottom: auto;
 	margin-top: 10px;
 }
@@ -217,8 +225,8 @@
 	--tooltip-color-background: #000;
 	--tooltip-arrow-color: #000;
 	--tooltip-color: #fff;
-	--tooltip-padding: calc(var(--spacing-unit) / 4);
+	--tooltip-padding: var(--spacing-unit-tiny);
 	--tooltip-width-wrap: 200px;
-	--tooltip-padding-small: calc(var(--spacing-unit) / 2);
-	--tooltip-padding-large: calc(var(--spacing-unit) * 2);
+	--tooltip-padding-small: var(--spacing-unit-small);
+	--tooltip-padding-large: var(--spacing-unit-large);
 }

@@ -1,105 +1,55 @@
-# Accordion
+<p class="u-text-emphasize">This library provides a base for building accordions.</p>
 
-The `Accordion` library provides a baseline for expandable and collapsible content that is broken into logical sections.
-
-## Base
-
-##### .c-accordion
-
-Base class for accordion.
+The accordion base comes with minimal color styling that can be overridden with your own modifier styles.
 
 ```html
 <div class="c-accordion">
 	<section class="c-accordion__item">
 		<div class="c-accordion__header">
-			<a href="#" class="c-accordion__title">Accordion item 1</a>
+			<a href="#" class="c-accordion__title">Item</a>
 		</div>
-		<div class="c-accordion__content is-active"></div>
+		<div class="c-accordion__content "></div>
 	</section>
 	<section class="c-accordion__item">
 		<div class="c-accordion__header">
-			<a href="#" class="c-accordion__title">Accordion item 2</a>
+			<a href="#" class="c-accordion__title">Item</a>
 		</div>
 		<div class="c-accordion__content"></div>
 	</section>
 	<section class="c-accordion__item">
 		<div class="c-accordion__header">
-			<a href="#" class="c-accordion__title">Accordion item 3</a>
+			<a href="#" class="c-accordion__title">Item</a>
 		</div>
 		<div class="c-accordion__content"></div>
 	</section>
 </div>   
 ```
 
-##### .c-accordion__item
+### .is-active
 
-Base class for accordion items.
-
-```html
-<div class="c-card">
-	<div class="c-dropdown__header"></div>
-</div>   
-```
-
-##### .c-accordion__content
-
-Base class for the card content.
+When applied to `.c-accordion__item` will change the state to active.
 
 ```html
 <div class="c-accordion">
+	<section class="c-accordion__item is-active">
+		<div class="c-accordion__header">
+			<a href="#" class="c-accordion__title">Item</a>
+		</div>
+		<div class="c-accordion__content ">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis neque a dapibus commodo. Nam feugiat fermentum massa, non dignissim mi. Nam dictum faucibus dolor, nec venenatis leo facilisis id. </p>
+		</div>
+	</section>
 	<section class="c-accordion__item">
 		<div class="c-accordion__header">
-			<a href="#" class="c-accordion__title">Accordion item 1</a>
+			<a href="#" class="c-accordion__title">Item</a>
 		</div>
 		<div class="c-accordion__content"></div>
 	</section>
-</div>   
-```
-
-##### .c-accordion__header
-
-Base class accordion item header.
-
-```html
-<div class="c-accordion">
 	<section class="c-accordion__item">
 		<div class="c-accordion__header">
-			<a href="#" class="c-accordion__title">Accordion item 1</a>
+			<a href="#" class="c-accordion__title">Item</a>
 		</div>
 		<div class="c-accordion__content"></div>
 	</section>
-</div>   
-```
-
-##### .c-accordion__content
-
-Base class accordion item content.
-
-```html
-<div class="c-accordion">
-	<section class="c-accordion__item">
-		<div class="c-accordion__header">
-			<a href="#" class="c-accordion__title">Accordion item 1</a>
-		</div>
-		<div class="c-accordion__content"></div>
-	</section>
-</div>   
-```
-
-## States
-
-
-##### .is-active
-
-Sets selected item to active and open.
-
-```html
-<div class="c-accordion">
-	<section class="c-accordion__item">
-		<div class="c-accordion__header">
-			<a href="#" class="c-accordion__title">Accordion item 1</a>
-		</div>
-		<div class="c-accordion__content is-active"></div>
-	</section>
-</div>    
+</div>
 ```

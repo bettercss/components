@@ -1,12 +1,4 @@
-# Nav
-
-The `Nav` library provides a baseline for complex and flexible navigation's.
-
-## Base
-
-##### .c-nav
-
-Base class for nav.
+<p class="u-text-emphasize">This library provides a baseline for complex and flexible navigation's.</p>
 
 ```html
 <nav class="c-nav">
@@ -15,72 +7,20 @@ Base class for nav.
 </nav>    
 ```
 
-##### .c-nav__list
+### .c-nav--horizontal
 
-Base class for handling lists navigation's.
-
-```html
-<nav class="c-nav">
-  <ul class="c-nav__list">
-      <li class="c-nav__item"><a  class="c-nav__link" href="#" title="Item">Item</a></li>
-      <li class="c-nav__item"><a  class="c-nav__link" href="#" title="Item">Item</a></li>
-  </ul>
-</nav>   
-```
-
-##### .c-nav__item
-
-Base class nav items.
+Horizontal navigation.
 
 ```html
-<nav class="c-nav">
-  <ul class="c-nav__list">
-      <li class="c-nav__item"><a  class="c-nav__link" href="#" title="Item">Item</a></li>
-      <li class="c-nav__item"><a  class="c-nav__link" href="#" title="Item">Item</a></li>
-  </ul>
-</nav>   
+<nav class="c-nav c-nav--horizontal">
+	<a  class="c-nav__link u-padding-tiny" href="#" title="Item">Item</a>
+    <a  class="c-nav__link u-padding-tiny" href="#" title="Item">Item</a>
+</nav>
 ```
 
-##### .c-nav__item
+### .c-nav--equal
 
-Base class nav items.
-
-```html
-<nav class="c-nav">
-  <ul class="c-nav__list">
-      <li class="c-nav__item"><a  class="c-nav__link" href="#" title="Item">Item</a></li>
-      <li class="c-nav__item"><a  class="c-nav__link" href="#" title="Item">Item</a></li>
-  </ul>
-</nav>   
-```
-
-##### .c-nav__link
-
-Base class nav links.
-
-```html
-<nav class="c-nav">
-	<a  class="c-nav__link" href="#" title="Item">Item</a>
-    <a  class="c-nav__link" href="#" title="Item">Item</a>
-</nav>    
-```
-
-## Modifiers
-
-##### .c-nav--vertical
-
-Vertical navigation.
-
-```html
-<nav class="c-nav c-nav--vertical">
-	<a  class="c-nav__link" href="#" title="Item">Item</a>
-    <a  class="c-nav__link" href="#" title="Item">Item</a>
-</nav>    
-```
-
-##### .c-nav--equal
-
-Used in conjunction with horizontal navigation's.
+Equal spacing between menu items.
 
 ```html
 <nav class="c-nav c-nav--horizontal c-nav--equal">

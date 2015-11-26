@@ -8,14 +8,6 @@
 }
 
 /**
- * 1. Remove margin from last child element to prevent large space.
- */
-
-.c-feedback:last-child {
-	margin-bottom: 0; /* [1] */
-}
-
-/**
  * Used for styling links in specific modifiers.
  */
 
@@ -25,6 +17,11 @@
 .c-feedback__link:focus {
 	color: inherit;
 	text-decoration: underline;
+}
+
+.c-feedback--info {
+	background-color: var(--feedback-color-background-info);
+	color: var(--feedback-color-info);
 }
 
 .c-feedback--error {
@@ -42,27 +39,18 @@
 	color: var(--feedback-color-warning);
 }
 
-.c-feedback--small {
-	padding: var(--feedback-padding-small);
-}
-
-.c-feedback--large {
-	padding: var(--feedback-padding-large);
-}
-
 
 
 
 
 :root {
-	--feedback-padding: var(--spacing-unit);
-	--feedback-padding-small: calc(var(--spacing-unit) / 2);
-	--feedback-padding-large: calc(var(--spacing-unit) * 2);
-
-	--feedback-color-background-error: #e94c60;
-	--feedback-color-error: #fff;
-	--feedback-color-background-success: #8ac867;
-	--feedback-color-success: #fff;
-	--feedback-color-background-warning: #ff9900;
-	--feedback-color-warning: #fff;
+	--feedback-padding: var(--spacing-unit-small);
+	--feedback-color-background-info: #cee2f4;
+	--feedback-color-info: #02356e;
+	--feedback-color-background-error: #f5cccb;
+	--feedback-color-error: #6f0000;
+	--feedback-color-background-success: #d9ead2;
+	--feedback-color-success: #264f0d;
+	--feedback-color-background-warning: #fff3ca;
+	--feedback-color-warning: #806100;
 }

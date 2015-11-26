@@ -1,12 +1,6 @@
-# Button Group
+<p class="u-text-emphasize">This library provides a base to group buttons together on a single line.</p>
 
-The `Button Group` library helps group a series of buttons together on a single line.
-
-## Base
-
-##### .c-button-group
-
-Base container class for button group
+This library works great with the `button` library but can work without.
 
 ```html
 <div class="c-button-group">
@@ -16,56 +10,42 @@ Base container class for button group
 </div>  
 ```
 
-##### .c-button-group__item
+### .c-button-group--rounded
 
-Base class for button item for button group.
-
-```html
-<div class="c-button-group">
-	<a class="c-button-group__item c-button" href="Button">Button</a>
-</div>  
-```
-
-## Modifiers
-
-##### .c-button-group--rounded
-
-Rounds the edges of the button group.
+Rounds edges of the first and last button.
 
 ```html
 <div class="c-button-group c-button-group--rounded">
 	<a class="c-button-group__item c-button" href="Button">Button</a>
-</div>  
+	<a class="c-button-group__item c-button" href="Button">Button</a>
+	<a class="c-button-group__item c-button" href="Button">Button</a>
+</div>
 ```
 
-##### .c-button-group--justified
+### .c-button-group--border
 
-Justifies the button items.
+Removes double borders when buttons have borders.
 
-```html
-<div class="c-button-group c-button-group--rounded">
-	<a class="c-button-group__item c-button" href="Button">Button</a>
-</div>  
-```
-
-##### .c-button-group--borded
-
-Removes double borders when buttons have borders `This is a hack and will be deprecated in future`
+`Note: Only works for 1px borders`
 
 ```html
-<div class="c-button-group c-button-group--rounded">
+<div class="c-button-group c-button-group--border">
 	<a class="c-button-group__item c-button" href="Button">Button</a>
-</div>  
+	<a class="c-button-group__item c-button" href="Button">Button</a>
+	<a class="c-button-group__item c-button" href="Button">Button</a>
+</div>
 ```
 
 ### Spacing
 
-##### .c-button-group--[small|large]
+##### .c-button-group--gutter-[small|large]
 
-Inner spacing gutter between button items.
+Adds spacing between buttons.
 
 ```html
-<div class="c-button-group c-button-group--rounded">
+<div class="c-button-group c-button-group--gutter-small">
 	<a class="c-button-group__item c-button" href="Button">Button</a>
-</div>  
+	<a class="c-button-group__item c-button" href="Button">Button</a>
+	<a class="c-button-group__item c-button" href="Button">Button</a>
+</div>
 ```

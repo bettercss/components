@@ -27,15 +27,7 @@
 	left: -99999px; /* [1] */
 	opacity: 0;
 	background-color: var(--dropdown-content-color-background);
-}
-
-/**
- * 1. Prevent extra space after elements like P, UL, etc. when they are the
- *    last thing in the content.
- */
-
-.c-dropdown__content:last-child {
-	margin-bottom: 0; /* [1] */
+	border: var(--dropdown-content-border);
 }
 
 .c-dropdown--right.is-active .c-dropdown__content {
@@ -72,23 +64,12 @@
 	right: 0;
 }
 
-/**
- * 100% width dropdown and content
- */
-
-.c-dropdown--full {
-	width: 100%;
-}
-
-.c-dropdown--full .c-dropdown__content {
-	width: 100%;
-}
-
 
 
 
 
 :root {
 	--dropdown-content-color-background: #fff;
+	--dropdown-content-border: solid 1px #ccc;
 	--dropdown-content-min-width: 200px;
 }

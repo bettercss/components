@@ -1,50 +1,39 @@
-# Overlay
+<p class="u-text-emphasize">This library provides a baseline for overlaying content in the viewport or regions.</p>
 
-The `Overlay` library provides a baseline for overlaying content in the viewport or regions.
+Example can only be provided for region take over.
 
-## Base
+### .c-overlay--region
 
-##### .c-overlay
+Overlays the container region.
 
-Base class for overlays.
+`Note: container requires relative positioning.`
+
 
 ```html
-<div class="c-overlay">
-	<div class="c-overlay__content"></div>
-</div>    
+<div style="position:relative;height: 400px;">
+	<div class="c-overlay c-overlay--region is-active">
+		<div class="c-overlay__content">
+			<div class="c-card  u-column-6">
+                <div class="c-card__header">
+                    <h3 class="u-margin-remove">Header</h3>
+                </div>
+                <div class="c-card__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis neque a dapibus commodo. Nam feugiat fermentum massa, non dignissim mi. Nam dictum faucibus dolor, nec venenatis leo facilisis id. </p>
+                </div>
+                <div class="c-card__footer u-text-align-right">
+                    <a class="c-button" href="#">Ok</a>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
 ```
 
-##### .c-overlay__content
+### .is-active
 
-Base class for holding overlay content.
-
-```html
-<div class="c-overlay__content"></div>   
-```
+Sets an overlay in active state.
 
 
-## State
-
-##### .is-active
-
-When a overlay is in an active state.
-
-```html
-<div class="c-overlay is-active">
-	<div class="c-overlay__content"></div>
-</div> 
-```
-
-##### .has-overlay
+### .has-overlay
 
 State class to be applied to the body when overlay `is-active` state.
-
-```html
-<html class="has-overlay">
-<body>
-  <div class="c-overlay is-active">
-      <div class="c-overlay__content"></div>
-  </div>
-</body>
-</html>
-```

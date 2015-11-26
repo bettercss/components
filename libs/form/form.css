@@ -9,7 +9,8 @@
 .c-form__select,
 .c-form__textarea,
 .c-form__file,
-.c-form__item {
+.c-form__item,
+.c-form__label {
 	font-family: var(--form-field-font-family);
 	font-size: var(--form-field-font-size);
 }
@@ -17,53 +18,86 @@
 .c-form__input,
 .c-form__select,
 .c-form__textarea,
-.c-form__file,
-.c-form__checkbox,
-.c-form__radio,
-.c-form__label {
+.c-form__file {
+	width: 100%;
 	padding: var(--form-field-padding);
 }
+
+.c-form__input,
+.c-form__select,
+.c-form__textarea {
+	padding: var(--form-field-padding);
+}
+
+.c-form__input,
+.c-form__textarea,
+.c-form__file {
+	height: var(--form-field-height);
+}
+
+.c-form__label {
+	vertical-align: middle;
+}
+
+/* Containers */
 
 .c-form__fieldset,
 .c-form__item {
 	padding: var(--form-container-padding);
 }
 
-/**
- * Contains labels, controls, error messages, etc.
- */
-
-.c-form__item {
-	margin-bottom: var(--vertical-rhyme);
-}
-
-/**
- * Wrap form elements in one or more fieldsets so they are grouped if CSS is
- * disabled.
- */
-
 .c-form__fieldset {
 	border: var(--form-fieldset-border);
 }
 
-.c-form__label {
-	font-weight: var(--form-label-weight);
+.c-form__field {
+	margin-bottom: var(--form-field-margin);
 }
 
-.c-form__input {
-	width: 100%;
+/* Check/Radio */
+
+.c-form__checkbox .c-form__input,
+.c-form__checkbox .c-form__label,
+.c-form__radio .c-form__input,
+.c-form__radio .c-form__label {
+	display: inline-block;
+	vertical-align: middle;
 }
 
+.c-form__checkbox .c-form__input,
+.c-form__radio .c-form__input {
+	width: auto;
+	height: auto;
+}
 
+.c-form__checkbox .c-form__label,
+.c-form__radio .c-form__label {
+	padding: 0;
+	padding-left: var(--form-check-padding);
+}
 
+/* Select */
 
+.c-form__select {
+	line-height: 1.75;
+	padding: var(--spacint-unit);
+}
+
+.c-form__select:not([multiple]) {
+	height: var(--form-field-height);
+	vertical-align: middle;
+}
 
 :root {
 	--form-field-font-family: inherit;
 	--form-field-font-size: 1rem;
-	--form-field-padding: calc(var(--spacing-unit) / 3);
-	--form-container-padding: calc(var(--spacing-unit) / 2);
-	--form-item-margin: 0 calc(var(--spacing-unit) / 2) 0 0;
+
+	--form-container-padding: var(--spacing-unit);
+	--form-field-margin: var(--spacing-unit-small);
+	--form-field-padding: var(--spacing-unit-small);
+	--form-check-padding: var(--spacing-unit-tiny);
+
+	--form-field-height: 2.25rem;
+
 	--form-fieldset-border: solid 1px #ccc;
-	--form-label-weight: bold;
 }
