@@ -7,7 +7,7 @@
 </nav>    
 ```
 
-### Alignment
+## Alignment
 
 The default alignment behaviour for navigation is vertical, use `.c-nav--horizontal` if you require a horizontal navigation.
 
