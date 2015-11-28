@@ -1,12 +1,12 @@
-<p class="u-text-emphasize">This library provides a baseline for overlaying content in the viewport or regions.</p>
+<p class="u-text-emphasize">This library provides a base for overlaying content in the viewport or fixed regions.</p>
 
-Example can only be provided for region take over.
+*Note: Javascript coming soon.*
 
-### .c-overlay--region
+## Regions
 
-Overlays the container region.
+Use `.c-overlay--region` to take over a specific region of the page.
 
-`Note: container requires relative positioning.`
+*Note: container requires relative positioning.*
 
 
 ```html
@@ -29,11 +29,13 @@ Overlays the container region.
 </div>
 ```
 
+## States
+
 ### .is-active
 
-Sets an overlay in active state.
+When applied to `.c-overlay` will make the overlay visible.
 
 
 ### .has-overlay
 
-State class to be applied to the body when overlay `is-active` state.
+This class works with `.is-active` and should be placed on the html tag to stop background scrolling.

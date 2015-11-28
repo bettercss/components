@@ -40,7 +40,7 @@
 
 
 :root {
-	--label-padding: var(--spacing-unit-tiny);
+	--label-padding: .2rem .5rem;
 	--label-font-weight: bold;
 	--label-front-size: .80rem;
 

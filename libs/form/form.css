@@ -4,65 +4,88 @@
 
 .c-form {}
 
-.c-form__fieldset,
-.c-form__input,
-.c-form__select,
-.c-form__textarea,
+.c-form__fieldset {}
+.c-form__field {
+	margin-bottom: var(--spacing-unit);
+}
+
+.c-form__input[type=date],
+.c-form__input[type=datetime-local],
+.c-form__input[type=datetime],
+.c-form__input[type=email],
+.c-form__input[type=month],
+.c-form__input[type=number],
+.c-form__input[type=password],
+.c-form__input[type=search],
+.c-form__input[type=tel],
+.c-form__input[type=text],
+.c-form__input[type=time],
+.c-form__input[type=url],
+.c-form__input[type=week],
 .c-form__file,
-.c-form__item,
-.c-form__label {
-	font-family: var(--form-field-font-family);
-	font-size: var(--form-field-font-size);
-}
-
-.c-form__input,
-.c-form__select,
-.c-form__textarea,
-.c-form__file {
-	width: 100%;
-	padding: var(--form-field-padding);
-}
-
-.c-form__input,
 .c-form__select,
 .c-form__textarea {
+	width: 100%;
+}
+
+.c-form__input[type=date],
+.c-form__input[type=datetime-local],
+.c-form__input[type=datetime],
+.c-form__input[type=email],
+.c-form__input[type=month],
+.c-form__input[type=number],
+.c-form__input[type=password],
+.c-form__input[type=search],
+.c-form__input[type=tel],
+.c-form__input[type=text],
+.c-form__input[type=time],
+.c-form__input[type=url],
+.c-form__input[type=week],
+.c-form__select,
+.c-form__textarea {
+	border: var(--form-field-border);
 	padding: var(--form-field-padding);
 }
 
-.c-form__input,
-.c-form__textarea,
-.c-form__file {
+.c-form__input[type=date],
+.c-form__input[type=datetime-local],
+.c-form__input[type=datetime],
+.c-form__input[type=email],
+.c-form__input[type=month],
+.c-form__input[type=number],
+.c-form__input[type=password],
+.c-form__input[type=search],
+.c-form__input[type=tel],
+.c-form__input[type=text],
+.c-form__input[type=time],
+.c-form__input[type=url],
+.c-form__input[type=week],
+.c-form__select:not([multiple]) {
 	height: var(--form-field-height);
 }
 
-.c-form__label {
-	vertical-align: middle;
+
+.c-form__input[type=date],
+.c-form__input[type=datetime-local],
+.c-form__input[type=datetime],
+.c-form__input[type=email],
+.c-form__input[type=month],
+.c-form__input[type=number],
+.c-form__input[type=password],
+.c-form__input[type=search],
+.c-form__input[type=tel],
+.c-form__input[type=text],
+.c-form__input[type=time],
+.c-form__input[type=url],
+.c-form__input[type=week],
+.c-form__file {
+	-webkit-appearance: none;
 }
 
-/* Containers */
+/* Checkbox/Radio */
 
-.c-form__fieldset,
-.c-form__item {
-	padding: var(--form-container-padding);
-}
-
-.c-form__fieldset {
-	border: var(--form-fieldset-border);
-}
-
-.c-form__field {
-	margin-bottom: var(--form-field-margin);
-}
-
-/* Check/Radio */
-
-.c-form__checkbox .c-form__input,
 .c-form__checkbox .c-form__label,
-.c-form__radio .c-form__input,
-.c-form__radio .c-form__label {
-	display: inline-block;
-	vertical-align: middle;
-}
+.c-form__radio .c-form__label {}
 
 .c-form__checkbox .c-form__input,
 .c-form__radio .c-form__input {
@@ -70,34 +93,11 @@
 	height: auto;
 }
 
-.c-form__checkbox .c-form__label,
-.c-form__radio .c-form__label {
-	padding: 0;
-	padding-left: var(--form-check-padding);
-}
 
-/* Select */
 
-.c-form__select {
-	line-height: 1.75;
-	padding: var(--spacint-unit);
-}
-
-.c-form__select:not([multiple]) {
-	height: var(--form-field-height);
-	vertical-align: middle;
-}
 
 :root {
-	--form-field-font-family: inherit;
-	--form-field-font-size: 1rem;
-
-	--form-container-padding: var(--spacing-unit);
-	--form-field-margin: var(--spacing-unit-small);
-	--form-field-padding: var(--spacing-unit-small);
-	--form-check-padding: var(--spacing-unit-tiny);
-
 	--form-field-height: 2.25rem;
-
-	--form-fieldset-border: solid 1px #ccc;
+	--form-field-padding: var(--spacing-unit-small);
+	--form-field-border: solid 1px #ccc;
 }

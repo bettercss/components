@@ -22,12 +22,12 @@
 
 .c-dropdown__content {
 	position: absolute;
-	min-width: var(--dropdown-content-min-width);
+	min-width: var(--dropdown-min-width);
 	z-index:50;
 	left: -99999px; /* [1] */
 	opacity: 0;
-	background-color: var(--dropdown-content-color-background);
-	border: var(--dropdown-content-border);
+	background-color: var(--dropdown-color-background);
+	border: var(--dropdown-border);
 }
 
 .c-dropdown--right.is-active .c-dropdown__content {
@@ -69,7 +69,7 @@
 
 
 :root {
-	--dropdown-content-color-background: #fff;
-	--dropdown-content-border: solid 1px #ccc;
-	--dropdown-content-min-width: 200px;
+	--dropdown-color-background: #fff;
+	--dropdown-border: solid 1px #ccc;
+	--dropdown-min-width: 200px;
 }

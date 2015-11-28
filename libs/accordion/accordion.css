@@ -8,12 +8,12 @@
 }
 
 .c-accordion__item {
-	border: var(--accordion-item-border);
+	border: var(--accordion-border);
 	border-bottom: 0;
 }
 
 .c-accordion__item:last-child {
-	border-bottom: var(--accordion-item-border);
+	border-bottom: var(--accordion-border);
 }
 
 /**
@@ -22,24 +22,20 @@
  */
 
 .c-accordion__header {
-	padding: var(--accordion-header-padding);
+	padding: var(--accordion-padding);
 	user-select: none; /* [1] */
 	cursor: pointer;
 	border-bottom: 0;
 }
-
-/**
- * 1. Allow use of elements such as H1-H6 as titles by resetting margin.
- */
 
 .c-accordion__title {
 	margin: 0; /* [1] */
 }
 
 .c-accordion__content {
-	padding: var(--accordion-content-padding);
+	padding: var(--accordion-padding);
 	display: none;
-	border-top: var(--accordion-content-border);
+	border-top: var(--accordion-border);
 }
 
 /**
@@ -55,8 +51,6 @@
 
 
 :root {
-	--accordion-header-padding: var(--spacing-unit);
-	--accordion-content-padding: var(--spacing-unit);
-	--accordion-item-border: solid 1px #ccc;
-	--accordion-content-border: solid 1px #ccc;
+	--accordion-padding: var(--spacing-unit);
+	--accordion-border: solid 1px #ccc;
 }

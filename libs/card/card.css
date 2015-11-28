@@ -10,36 +10,34 @@
 .c-card {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	background-color: var(--card-color-background);
 	overflow: hidden; /* [1] */
 	width: 100%; /* [2] */
 }
 
-.c-card__header {
+.c-card__header,
+.c-card__content,
+.c-card__footer {
+	padding: var(--card-padding);
+	border: var(--card-border);
+}
+
+.c-card__header,
+.c-card__footer {
 	flex: 0 0 auto;
-	padding: var(--card-header-padding);
-	border: var(--card-header-border);
+}
+
+.c-card__header {
+	border-bottom: 0;
 }
 
 .c-card__content {
 	flex: 1 1 auto;
-	border: var(--card-content-border);
-	border-top: 0;
-	border-bottom: 0;
-	padding: var(--card-header-padding);
 }
 
 .c-card__footer {
-	flex: 0 0 auto;
-	padding: var(--card-footer-padding);
-	border: var(--card-header-border);
+	border-top: 0;
 }
-
-/**
- * Used for styling links. Will work regardless of what modifier is
- * applied to the card for theming.
- */
 
 .c-card__link,
 .c-card__link:hover,
@@ -65,10 +63,6 @@
 
 :root {
 	--card-color-background: #fff;
-	--card-header-border: solid 1px #ccc;
-	--card-content-border: solid 1px #ccc;
-	--card-footer-border: solid 1px #ccc;
-	--card-header-padding: var(--spacing-unit);
-	--card-content-padding: var(--spacing-unit);
-	--card-footer-padding: var(--spacing-unit);
+	--card-border: solid 1px #ccc;
+	--card-padding: var(--spacing-unit);
 }

@@ -17,8 +17,6 @@
  */
 
 .c-button {
-	font-family: var(--button-font-family);
-	font-size: var(--button-font-size);
 	color: var(--button-color);
 	background-color: var(--button-color-background);
 	display: inline-block; /* [1] */
@@ -33,7 +31,6 @@
 	-webkit-appearance: none; /* 8 */
 	user-select: none; /* 9 */
 	white-space: normal; /* 10 */
-	line-height: var(--button-line-height);
 }
 
 .c-button,
@@ -58,11 +55,8 @@
 
 
 :root {
-	--button-font-family: inherit;
-	--button-font-size: inherit;
-	--button-line-height: 1.5;
 	--button-border: solid 1px #ccc;
 	--button-color: #000;
 	--button-color-background: #fff;
-	--button-padding: var(--spacing-unit-small) var(--spacing-unit);
+	--button-padding: var(--spacing-unit-tiny) var(--spacing-unit-small);
 }

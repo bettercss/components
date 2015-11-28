@@ -1,7 +1,11 @@
-<p class="u-text-emphasize">This library is a baseline for building simple and extendable buttons.</p>
+<p class="u-text-emphasize">This library is a base for building simple buttons.</p>
 
-The `.c-button` base class sets basic color styles which you can overridden with your own modifiers.
+Use `.c-button` class to styles buttons, button inputs and links.
 
 ```html
-<a class="c-button" href="#" title="">Button</a>
+<button class="c-button">Button</button>
+<a class="c-button" href="#" title="">Link Button</a>
+<input class="c-button" type="submit" value="Input Button" />
 ```
+
+*Note: No color styles are provided in this library.*

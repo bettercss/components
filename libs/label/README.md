@@ -1,22 +1,18 @@
-<p class="u-text-emphasize">This library provides baseline for labels.</p>
-
-The label base comes with minimal color styling that can be overridden with your own modifier styles.
+<p class="u-text-emphasize">This library is a base for creating labels.</p>
 
 ```html
 <span class="c-label">Label</span>    
 ```
 
-### .c-label--round
+## Types
 
-Sets the label to round.
+Use `.c-label--round` for round labels.
 
 ```html
 <span class="c-label c-label--round c-label--info">20</span>
 ```
 
-##### .c-label--[info|error|success|warning]
-
-Sets the label color type based on the modifier specified.
+To set contextual types, use `.c-label--info`, `.c-label--error`, `.c-label--success`, `.c-label--warning`.
 
 ```html
 <span class="c-label c-label--info">Info</span>

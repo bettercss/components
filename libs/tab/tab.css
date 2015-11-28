@@ -7,7 +7,7 @@
 .c-tab__list {
 	display: flex;
 	flex-wrap: wrap;
-	border: var(--tab-list-border);
+	border: var(--tab-border);
 	list-style: none;
 	margin-bottom: 0;
 	background-color: var(--tab-list-color-background);
@@ -27,8 +27,8 @@
 
 .c-tab__content {
 	display: none;
-	padding: var(--tab-content-padding);
-	border: var(--tab-content-border);
+	padding: var(--tab-padding);
+	border: var(--tab-border);
 	border-top: 0;
 }
 
@@ -48,7 +48,7 @@
 .c-tab--vertical > .c-tab__list {
 	display: block;
 	flex: 0 0 auto;
-	border-bottom: var(--tab-list-border);
+	border-bottom: var(--tab-border);
 	border-right: 0;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .c-tab--vertical > .c-tab__content {
-	border-top: var(--tab-content-border);
+	border-top: var(--tab-border);
 	border-left: 0;
 }
 
@@ -75,10 +75,9 @@
 
 
 :root {
-	--tab-content-padding: var(--spacing-unit);
+	--tab-padding: var(--spacing-unit);
 	--tab-link-padding: var(--spacing-unit-small) var(--spacing-unit);
-	--tab-list-border: solid 1px #ccc;
-	--tab-content-border: solid 1px #ccc;
+	--tab-border: solid 1px #ccc;
 	--tab-list-color-background: #f2f2f2;
 	--tab-item-color-background: #fff;
 }

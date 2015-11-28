@@ -6,20 +6,16 @@
 	display: block;
 }
 
-/**
- * Used for styling links. Will work regardless of what modifier is applied
- * to the box for theming.
- */
-
 .c-box__link,
 .c-box__link:hover,
 .c-box__link:active,
 .c-box__link:focus {
 	color: inherit;
+	text-decoration: underline;
 }
 
 /**
- * Scrollable Box
+ * Modifiers
  */
 
 .c-box--scroll {

@@ -1,27 +1,36 @@
-<p class="u-text-emphasize">This library provides contextual feedback messages for typical user actions.</p>
-
-The feedback base comes with minimal color styling that can be overridden with your own modifier styles.
+<p class="u-text-emphasize">This library provides feedback messages for typical user actions.</p>
 
 ```html
 <div class="c-feedback">
-	<p>hi, *Waves*</p>
+	<p class="u-margin-remove">hi, *Waves*</p>
 </div>    
 ```
-### .c-feedback--[info|error|success|warning]
 
-Feedback color types.
+## Links
+
+`.c-feedback__link` can be used when you need to inherit the color set on `.c-feedback`.
+
+```html
+<div class="c-feedback .c-feedback--info">
+	<p class="u-margin-remove">hi, <a class="c-feedback__link" href="#">*Waves*</a></p>
+</div>
+```
+
+## Types
+
+To set contextual types, use `.c-feedback--info`, `.c-feedback--error`, `.c-feedback--success`, `.c-feedback--warning`.
 
 ```html
 <div class="c-feedback c-feedback--info">
-	<p>hi, *Waves*</p>
+	<p class="u-margin-remove">hi, *Waves*</p>
 </div>
 <div class="c-feedback c-feedback--error">
-<p>hi, *Waves*</p>
+	<p class="u-margin-remove">hi, *Waves*</p>
 </div>
 <div class="c-feedback c-feedback--success">
-	<p>hi, *Waves*</p>
+	<p class="u-margin-remove">hi, *Waves*</p>
 </div>
 <div class="c-feedback c-feedback--warning">
-	<p>hi, *Waves*</p>
+	<p class="u-margin-remove">hi, *Waves*</p>
 </div>
 ```
