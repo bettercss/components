@@ -1,7 +1,7 @@
 {
   "name": "bettercss-components",
-  "version": "0.0.1",
-  "description": "Components libraries for BetterCSS",
+  "version": "0.0.2",
+  "description": "Components libraries for Bettercss",
   "main": "index.js",
   "keywords": [
     "bettercss",
